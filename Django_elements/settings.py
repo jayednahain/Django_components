@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'query_set',
-    'signals'
+    #'signals',
+    'Cookie_com'
 ]
 
 MIDDLEWARE = [

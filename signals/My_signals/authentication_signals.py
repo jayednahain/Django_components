@@ -21,6 +21,7 @@ def login_success(sender,request,user,**kwargs):
    print(f'kwargs:  {kwargs}')
 
 
+# ---------------------------------------------------------------------------
 
 #2 connect the singla with reciver
 #user_logged_in.connect(login_success,sender=User)
@@ -39,6 +40,7 @@ def logout_success(sender,request,user,**kwargs):
    print(f'kwargs:  {kwargs}')
 
 #user_logged_out.connect(logout_success,sender=User)
+# ---------------------------------------------------------------------------
 
 
 def login_failed(sender,credentials,request,**kwargs):
@@ -50,7 +52,7 @@ def login_failed(sender,credentials,request,**kwargs):
    #print(credentials)
    print("------------Failed to log in-------------------")
    print("sender: ", sender)
-   print("request: ", request)
+   print("request: ", request )
    print("user data: ", credentials['username'])
    print(f'kwargs:  {kwargs}')
 

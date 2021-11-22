@@ -3,8 +3,5 @@ from django.shortcuts import render
 
 # Create your views here.
 
-
-def test_request_exception_signals(request):
-   a = 10/0
-
-   return HttpResponse("Hellow")
+def cookie_test(request):
+   return HttpResponse("hellow")
